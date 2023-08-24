@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;font-size: 16px;color: #666666;margin: 0
+}
+header{
+	width: 100%;height: 60px;background-color:#B0C7BD;box-shadow: 5px 5px 5px lightgray;z-index: 100;position: fixed;left: 0;top: 0
+}
+.logo{padding-top: 11px}
+.menu{padding-top: 20px}
+.menu ul{
+	padding: 0;margin: 0;list-style: none;display: flex
+}
+.menu ul li a{
+	padding: 8px 25px;border-radius: 20px;font-size: 17px
+}
+.menu ul li a:hover{
+	background-color:  #ABA86B ;color: white
+}
+.menu ul li .menu-item.active{
+	background-color: orangered; color: white
+}
+#home{
+	width: 100%;min-height: 1000px;padding-top: 100px; background: url("../img/bg-header.png"),url("../img/profile.png"); background-repeat: no-repeat; background-position: left top, bottom right
+}
+#about{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+.so{
+	font-size: 120px; color: black; font-weight: bold
+}
+.year{
+	padding-left: 10px; letter-spacing: 20px
+}
+#skill{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #D28CD2;
+  display: flex; border-radius: 10px
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width: 50%; 
+ border-radius: 10px; background: none; 
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color: #74B2BA; color: white
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color:#8BCDDC; color: white
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  
+  border-top: none;
+}
+#services{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+.service{
+	width: 100%; height: 150px; display: flex
+}
+.service-icon{
+	width: 180px; height: 150px; border: 1px solid darkred; display: flex; justify-content: center; align-items: center
+}
+.service-icon img{
+	width: 40px; transition: all 0.6s
+}
+.service-icon i{
+	font-size: 40px; color: red; transition: all 0.6s
+}
+.service-text{
+	width: 100%; height: 150px; padding: 10px
+}
+.service:hover .service-icon img{
+	width: 60px
+}
+.service:hover .service-icon i{
+	font-size: 60px
+}
+.service:hover .service-text{
+	background-color: #A24445; color: white
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+/* Style the tab */
+#projects .tab {
+   
+  
+  
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+  border-bottom: 2px solid white;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px; margin-left: 25px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  color: darkred; border-bottom: 2px solid darkred;
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  color: darkred; border-bottom: 2px solid darkred;
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  
+  border-top: none;
+}
+.box{
+	display: flex; justify-content: space-between; align-items: center
+}
+#projects .owl-nav { position:absolute; left:0px; top:35%; width:100%; }
+#projects .owl-nav [class*='owl-'] {
+	font-size:25px;  color: black;width: 40px;
+}
+
+#projects .owl-nav .owl-next{ position:absolute; right:-4%;}
+#projects .owl-nav .owl-prev{ position:absolute; left:-4%;}
+#projects .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:pink;
+      text-decoration: none; }
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+#testimonial .client{
+	text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px 30px
+}
+#testimonial .client img{
+	width: 100px; height: 100px; border-radius: 50%
+}
+#testimonial .client .vien{
+	width: 100px; height: 100px; border-radius: 50%; border: 1px solid pink; padding: 7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#testimonial .owl-nav [class*='owl-'] {
+	font-size:35px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: pink
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:darkred;
+      text-decoration: none; }
+
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+#contact .vien-chan{
+	padding-bottom: 15px; font-size: 25px; color: black; border-bottom: 1px solid darkred
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.tieu-de{
+	color: black; font-size: 40px
+}
+.text-den{
+	color: black
+}
+.bo-goc{
+	border-radius: 8px
+}
+.progress{
+	width: 100%; height: 7px; background-color: #bbbbbb; border-radius: 20px; margin-bottom: 15px; overflow: hidden
+}
+.bar{
+	height: 7px; border-radius: 20px;
+}
+.rotate-center {
+	-webkit-animation: rotate-center 0.9s ease-in-out both;
+	        animation: rotate-center 0.9s ease-in-out both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-17 14:1:13
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
